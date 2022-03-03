@@ -63,3 +63,14 @@ summary(mod_gaussian)
 
 ## Os modelos podem apresentar diferentes valores de p e AIC.
 ## Nesse caso, o melhor modelo é o gaussiano devido a peso ser um dado numérico contínuo.
+
+# Comparação de interceptos versus médias --------------------------------------------------------------------------------------------------
+
+mod_gaussian_1 <- glm(weight ~ Time, data = dat, family = 'gaussian')
+mod_gaussian_2 <- glm(weight ~ Time - 1, data = dat, family = 'gaussian')
+
+summary(mod_gaussian_1)
+summary(mod_gaussian_2)
+
+## Podemos observar que os estimates mudaram, no segundo modelo não é adicionado
+## o valor do intercepto, havendo apenas a comparação ao longo do tempo.
