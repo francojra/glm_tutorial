@@ -13,4 +13,7 @@
 4. Similaridade a Modelos Lineares;
 5. Erros ou distribuições não-normais;
 6. Link de funções não-lineares;
-7. GLM com Poisson.
+7. GLM com Poisson;
+8. Comparando modelos glm com gaussian e poisson;
+9. Comparação de interceptos versus médias;
+10. Verificar coeficientes de regressão, preditores e intervalos de confiança.
