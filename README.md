@@ -12,4 +12,5 @@
 3. Sintaxe do Modelo Linear Generalizado;
 4. Similaridade a Modelos Lineares;
 5. Erros ou distribuições não-normais;
-6. Link de funções não-lineares.
+6. Link de funções não-lineares;
+7. GLM com Poisson.
