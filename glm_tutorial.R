@@ -38,3 +38,14 @@ glm(y ~ x, data = dados, family = "gaussian")
 
 ## GLMs também tem links de funções não-lineares, os quais ligam os coeficientes de regressão
 ## para a distribuição e permite que o modelo linear generalize.
+
+# GLM com Poisson --------------------------------------------------------------------------------------------------------------------------
+
+glm(y ~ x, data = dat, family = 'poisson')
+
+## A distribuição de Poisson não deve ser usada quando os dados não forem de contagem ou
+## não forem positivos, quando a amostra de área e tempo não forem constantes, quando a média
+## for maior que ou aproximadamente igual a 30, quando os dados apresentarem sobre-dispersão 
+## e quando ouver dados com zeros inflacionados.
+
+## Os coeficientes da GLM de Poisson estão na escala log.
