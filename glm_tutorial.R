@@ -49,3 +49,17 @@ glm(y ~ x, data = dat, family = 'poisson')
 ## e quando ouver dados com zeros inflacionados.
 
 ## Os coeficientes da GLM de Poisson estão na escala log.
+
+# Comparando modelos glm com gaussian e poisson --------------------------------------------------------------------------------------------
+
+dat <- datasets::ChickWeight
+dat
+
+mod_poisson <- glm(weight ~ Time, data = dat, family = 'poisson')
+mod_gaussian <- glm(weight ~ Time, data = dat, family = 'gaussian')
+
+summary(mod_poisson)
+summary(mod_gaussian)
+
+## Os modelos podem apresentar diferentes valores de p e AIC.
+## Nesse caso, o melhor modelo é o gaussiano devido a peso ser um dado numérico contínuo.
