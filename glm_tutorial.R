@@ -24,3 +24,14 @@ glm(y ~ x, data = dados, family = "gaussian")
 # Similaridade a Modelos Lineares ----------------------------------------------------------------------------------------------------------
 
 ## Se a família é Gaussiana, então o GLM funciona como um LM.
+
+# Erros ou distribuições não-normais -------------------------------------------------------------------------------------------------------
+
+## Modelos lineares generalizados podem ter erros ou distribuições não-normais. Entretanto, 
+## existem limitações para as possíveis distribuições. Por exemplo, você pode usar a família POisson
+## para dados de contagem, ou você pode usar a família binomial para dados binomiais.
+
+# Link de funções não-lineares -------------------------------------------------------------------------------------------------------------
+
+## GLMs também tem links de funções não-lineares, os quais ligam os coeficientes de regressão
+## para a distribuição e permite que o modelo linear generalize.
