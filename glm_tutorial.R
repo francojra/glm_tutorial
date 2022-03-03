@@ -61,6 +61,10 @@ mod_gaussian <- glm(weight ~ Time, data = dat, family = 'gaussian')
 summary(mod_poisson)
 summary(mod_gaussian)
 
+## Os modelos com o summary promovem mais detalhes: resíduos dos desvios (ajuda a entender 
+## o ajuste do modelo), coeficientes (p,estimate, error, and t ou z value, os desvios dos 
+## modelos nulos e reasíduos, e AIC). Também indica se o modelo apresenta sobre-dispersão
+## (ter mais variância ou zeros que o modleo sugere).
 ## Os modelos podem apresentar diferentes valores de p e AIC.
 ## Nesse caso, o melhor modelo é o gaussiano devido a peso ser um dado numérico contínuo.
 
@@ -74,3 +78,9 @@ summary(mod_gaussian_2)
 
 ## Podemos observar que os estimates mudaram, no segundo modelo não é adicionado
 ## o valor do intercepto, havendo apenas a comparação ao longo do tempo.
+
+# Verificar coeficientes de regressão, preditores e intervalos de confiança ------------------------------------------------------------------------------------------------------
+
+coef(mod_gaussian)
+confint(mod_gaussian)
+predict(mod_gaussian)
