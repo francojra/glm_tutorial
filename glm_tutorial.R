@@ -28,8 +28,11 @@ glm(y ~ x, data = dados, family = "gaussian")
 # Erros ou distribuições não-normais -------------------------------------------------------------------------------------------------------
 
 ## Modelos lineares generalizados podem ter erros ou distribuições não-normais. Entretanto, 
-## existem limitações para as possíveis distribuições. Por exemplo, você pode usar a família POisson
+## existem limitações para as possíveis distribuições. Por exemplo, você pode usar a família Poisson
 ## para dados de contagem, ou você pode usar a família binomial para dados binomiais.
+
+## Exemplo dados binários: sobrevivência (morto ou vivo);
+## Exemplo dados de contagem: número de indivíduos ou espécies.
 
 # Link de funções não-lineares -------------------------------------------------------------------------------------------------------------
 
