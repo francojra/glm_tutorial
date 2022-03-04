@@ -16,4 +16,5 @@
 7. GLM com Poisson;
 8. Comparando modelos glm com gaussian e poisson;
 9. Comparação de interceptos versus médias;
-10. Verificar coeficientes de regressão, preditores e intervalos de confiança.
+10. Verificar coeficientes de regressão, estatísticas e intervalos de confiança;
+11. Previsões com glm.
