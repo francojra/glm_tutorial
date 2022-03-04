@@ -84,3 +84,6 @@ summary(mod_gaussian_2)
 coef(mod_gaussian)
 confint(mod_gaussian)
 predict(mod_gaussian)
+
+library(broom)
+tidy(mod_gaussian)
