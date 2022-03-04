@@ -79,7 +79,7 @@ summary(mod_gaussian_2)
 ## Podemos observar que os estimates mudaram, no segundo modelo não é adicionado
 ## o valor do intercepto, havendo apenas a comparação ao longo do tempo.
 
-# Verificar coeficientes de regressão, estatísticas e intervalos de confiança ------------------------------------------------------------------------------------------------------
+# Verificar coeficientes de regressão, estatísticas e intervalos de confiança ---------------------------------------------------------------
 
 coef(mod_gaussian)
 confint(mod_gaussian)
